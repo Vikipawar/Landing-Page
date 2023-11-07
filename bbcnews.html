@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC NEWS</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        /* body{
+            
+        } */
+
+        #logo {
+            height: 24px;
+            width: 100px;
+        }
+
+
+        #ul1 {
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            padding-top: 2px;
+            height: 40px;
+            position: relative;
+            text-align: center;
+        }
+
+        #ul1 li {
+            padding: 7px 20px 7px 20px;
+            border-left: 1px solid white;
+        }
+
+        #ul2 {
+            /* position: absolute; */
+            text-decoration: none;
+            list-style: none;
+            background-color: black;
+            color: white;
+            padding-top: 2px;
+            width: 130px;
+            text-align: center;
+            margin-top: 16px;
+            /* display: none; */
+        }
+
+        #ul2 li {
+            padding: 10px 28px 10px 19px;
+            border-bottom: 1px solid white;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #dropdown {
+            padding: 0px 40px 0px 40px;
+        }
+
+
+
+        nav ul li ul {
+            position: absolute;
+            display: none;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+
+
+
+        #firstchild:hover {
+            border-bottom: 4px solid red;
+        }
+
+        #secondchild:hover {
+            border-bottom: 4px solid rgb(140, 0, 255);
+        }
+
+        ul :nth-child(3):hover {
+            border-bottom: 4px solid yellow;
+        }
+
+        ul :nth-child(4):hover {
+            border-bottom: 4px solid #18b;
+        }
+
+        ul :nth-child(5):hover {
+            border-bottom: 4px solid red;
+        }
+
+        ul :nth-child(6):hover {
+            border-bottom: 4px solid #0068ff;
+        }
+
+        ul :nth-child(7):hover {
+            border-bottom: 4px solid rgb(255, 0, 149);
+        }
+
+        ul :nth-child(8):hover {
+            border-bottom: 4px solid #ff9900;
+        }
+
+        ul :nth-child(9):hover {
+            border-bottom: 4px solid rgb(0, 255, 136);
+        }
+
+        ul :nth-child(10):hover {
+            border-bottom: 4px solid #5eff00;
+        }
+
+
+        #drd:hover {
+            border-bottom: 4px solid yellow;
+        }
+
+        #ul2 :nth-child(2):hover {
+            border-bottom: 4px solid #18b;
+        }
+
+        #ul2 :nth-child(3):hover {
+            border-bottom: 4px solid red;
+        }
+
+        #ul2 :nth-child(44):hover {
+            border-bottom: 4px solid #1be758;
+        }
+
+        .maindiv {
+            display: flex;
+            margin: 10px 0px 0px 16px;
+        }
+
+        .main {
+
+            height: 346px;
+            width: 616px;
+            position: relative;
+            margin: 0px 5px 0px 0px;
+            background-color: black;
+
+        }
+
+        #img1 {
+            height: 346px;
+            width: 616px;
+            opacity: 0.5;
+        }
+
+        #mh2 {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            /* color: white; */
+        }
+
+        #mh2 h1 {
+            color: white;
+            margin-bottom: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #mh2 h3 {
+            color: gray;
+            margin-bottom: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .subdiv {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px 0px 0px 10px;
+        }
+
+        .sub {
+            height: 168px;
+            width: 300px;
+            margin: 0px 0px 0px 5px;
+            position: relative;
+            background-color: black;
+        }
+
+        .sh2 {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .sh2 :nth-child(1) {
+            color: white;
+        }
+
+        .sh2 :nth-child(2) {
+            color: gray;
+        }
+
+
+        .subimg1 {
+            height: 168px;
+            width: 300px;
+            opacity: 0.5;
+        }
+
+        #welcome,
+        #date {
+            display: inline-block;
+            margin: 0px;
+        }
+
+        .bigdiv {
+            /* position: relative; */
+            margin: 50px 135px 0px 120px;
+            z-index: -1;
+        }
+
+        #date {
+            float: right;
+        }
+
+        .subh3 {
+            margin-left: 15px;
+        }
+
+        /* .subh3::before{
+            border-left: 2px solid red;
+        } */
+
+        .subimg1:hover {
+            opacity: 1;
+        }
+
+        #img1:hover {
+            opacity: 1;
+        }
+
+        .section1 {
+            margin: 75px 0px 0px 135px;
+        }
+
+        .container2 {
+            display: flex;
+        }
+
+        .parts {
+            height: 362px;
+            width: 405px;
+            margin: 5px;
+        }
+        .s1n1{
+            width: 405px;
+        }
+        .parts h3{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: gray;
+            margin-bottom: 10px;
+        }
+        .parts h2{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: black;
+        }
+        /* .s1n1{
+            opacity: 0.5;
+        }
+        .s1n1:hover{
+            opacity: 1;
+        } */
+
+    .sechead{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="naav">
+        <ul id="ul1">
+            <li id="firstchild"><img src="./BBC_logo_white-maxsize.png" alt="" id="logo"></li>
+            <li id="secondchild"><a href="#"> Home </a></li>
+            <li><a href="#"> News </a></li>
+            <li><a href="#"> BBC Account </a></li>
+            <li><a href="#"> Sport </a></li>
+            <li><a href="#"> Reel </a></li>
+            <li><a href="#"> Worklife </a></li>
+            <li><a href="#"> Travel </a></li>
+            <li><a href="#"> Future </a></li>
+            <li><a href="#"> Culture </a></li>
+            <li>
+                <a id="dropdown"> More &#9660; </a>
+                <ul id="ul2">
+                    <li id="drd"><a href="#"> Music </a></li>
+                    <li class="drl"><a href="#"> Tv </a></li>
+                    <li class="drl"><a href="#"> Weather </a></li>
+                    <li class="drl"><a href="#"> Sounds </a></li>
+                </ul>
+            </li>
+            <li><input type="search" placeholder="Search"></li>
+        </ul>
+    </nav>
+
+
+    <div class="bigdiv">
+        <div>
+            <h1 id="welcome">
+                Welcome to BBC.com
+            </h1>
+            <h1 id="date">
+                Sunday, 5 November
+            </h1>
+        </div>
+
+
+        <div class="maindiv">
+            <div class="main">
+                <img src="./newsimg1.jpg" alt="" id="img1">
+                <div id="mh2">
+                    <h1>Italy begins strict Easter lockdown</h1> 
+                    <h3>MIDDLE EAST</h3>
+                </div>
+            </div>
+            <div class="subdiv">
+                <div class="sub">
+                    <img src="./news12.jpg" alt="" class="subimg1">
+                    <div class="sh2">
+                        <h3>France enters third lockdown as ICU numbers surge</h3>
+                        <h3 class="subh3">EUROPE</h3>
+                    </div>
+
+                </div>
+                <div class=" sub">
+                    <img src="./news16.jpg" alt="" class="subimg1">
+                    <div class="sh2">
+                        <h3>State of emergency over Florida toxic water leak</h3>
+                        <h3 class="subh3">US & CANADA</h3>
+                    </div>
+                </div>
+                <div class="sub">
+                    <img src="./news14.jpg" alt="" class="subimg1">
+                    <div class="sh2">
+                        <h3>The great 'lost' female superhero</h3>
+                        <h3 class="subh3">DID YOU MISS?</h3>
+                    </div>
+                </div>
+                <div class="sub">
+                    <img src="./news17.jpg" alt="" class="subimg1">
+                    <div class="sh2">
+                        <h3>Man City four wins from title after victory at Leicester</h3>
+                        <h3 class="subh3">FOOTBALL</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section1">
+
+        <h1 class="sechead">News</h1>
+        <div class="container2">
+            <div class="parts">
+                <img src="./new21.jpg" alt="" class="s1n1">
+                <h2>Pandemic peaks in Eastern Europe and ruins Easter</h2>
+                <h3>NEWS</h3>
+            </div>
+
+            <div class="parts">
+                <img src="./news22.jpg" alt="" class="s1n1">
+                <h2>Indian state facing lockdown unless cases fall</h2>
+                <h3>INDIA</h3>
+            </div>
+
+
+            <div class="parts">
+                <img src="./news23.jpg" alt="" class="s1n1">
+                <h2>Saints seal comeback win over Burnley</h2>
+                <h3>FOOTBALL</h3>
+            </div>
+        </div>
+
+    </section>
+    <section class="section1">
+
+        <h1 class="sechead">Sports</h1>
+        <div class="container2">
+            <div class="parts">
+                <img src="./news31.jpg" alt="" class="s1n1">
+                <h2>How Benzema stepped out of the shadows</h2>
+                <h3>FOOTBALL</h3>
+            </div>
+
+            <div class="parts">
+                <img src="./news32.jpg" alt="" class="s1n1">
+                <h2>Spieth wins first title since 2017</h2>
+                <h3>GOLF</h3>
+            </div>
+
+
+            <div class="parts">
+                <img src="./news33.jpg" alt="" class="s1n1">
+                <h2>Why attack is Newcastle's best hope of survival - shearer</h2>
+                <h3>FOOTBALL</h3>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
